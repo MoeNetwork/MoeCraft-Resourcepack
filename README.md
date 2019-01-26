@@ -17,7 +17,7 @@ BiblioCraft的自定义画在`assets/bibliocraft/textures/custompaintings/`中�
 
 `{"目录名.音乐名": {"category": "master", "replace": true, "sounds":[{"name": "目录名/音乐名", "stream": true}]}}`
 
-注：在游戏中播放这些音乐需要OP指令/playsound。
+注：在游戏中播放这些音乐需要OP指令/playsound，命令为`/playsound 目录名.音乐名 播放形式 玩家（选择器） x y z`。
 
 
 
