@@ -1,0 +1,8 @@
+This is an example resource pack to show how to pack custom paintings with your resource pack or make a sepciality custom paintings resource pack. You can load as many different custom painting packs as you like and the painting press will load all the paintings found in loaded packs. 
+
+A few quick notes about editing the resource pack and making it your own:
+Edit the pack.mcmeta in a text editor to change the name of your custom pack.
+Change the pack.png image to change the image that shows up in game on the resource packs page.
+For custom paintings, just ass .png images to folder: assets/bibliocraft/textures/custompaintings/
+
+Custom paintings must be in .png format to work. You can also place sub-folders inside the custom paintings folder and as long as the paintings are .png, the painting press will find them. 

@@ -1,0 +1,1 @@
+Place your .png images for custom paintings in this folder. The images must be in .png format to work. You can also place .png images inside any number of sub folders inside this folder and they will still be detected by the painting press.
