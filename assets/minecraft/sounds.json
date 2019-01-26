@@ -1,1 +1,1 @@
-{"azis.hop": {"category": "master","sounds":[{"name": "azis/hop", "stream": true}]}}
+{"azis.hop": {"category": "master", "replace": true, "sounds":[{"name": "azis/hop", "stream": true}]}},
