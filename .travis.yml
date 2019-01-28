@@ -14,11 +14,5 @@ script:
   - zip -q -r MoeCraft-Resourcepack.zip * -d .travis.yml -d .git
 
 after_success:
-  - git clone -b pack https://github.com/MoeNetwork/MoeCraft-Resourcepack.git .pack
-  - cd .pack
-  - git checkout pack
-  - mv -f ../MoeCraft-Resourcepack.zip ./
-  - git push origin pack
-
   - ftp cdn.kotori.net
   - put MoeCraft-Resourcepack.zip /MoeCraft/.minecraft/resourcepacks/MoeCraft-Resourcepack.zip
