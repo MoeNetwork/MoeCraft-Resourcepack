@@ -1,12 +1,11 @@
-language: python
-
+language: node_js
 branches:
   only:
   - master
 
 install:
-  - echo "machine cdn.kotori.net login mc password CDN_PASSWD" > .netrc
-  - chmod 600 .netrc
+  - npm install
+  - bower install
 
 script:
   - set -ev
@@ -14,5 +13,4 @@ script:
   - zip -r MoeCraft-Resourcepack.zip ./*
 
 after_success:
-  - ftp cdn.kotori.net
-  - put MoeCraft-Resourcepack.zip /MoeCraft/.minecraft/resourcepacks/MoeCraft-Resourcepack.zip
+  - curl -T MoeCraft-Resourcepack.zip -u $CDN_USER:$CDN_PASSWD ftp://cdn.kotori.net/MoeCraft/.minecraft/resourcepacks/
