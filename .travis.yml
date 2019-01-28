@@ -3,10 +3,6 @@ branches:
   only:
   - master
 
-install:
-  - npm install
-  - bower install
-
 script:
   - set -ev
   - export TZ='Asia/Shanghai'
