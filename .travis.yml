@@ -11,7 +11,7 @@ install:
 script:
   - set -ev
   - export TZ='Asia/Shanghai'
-  - zip -r MoeCraft-Resourcepack.zip * -d .git
+  - zip -r MoeCraft-Resourcepack.zip ./*
 
 after_success:
   - ftp cdn.kotori.net
