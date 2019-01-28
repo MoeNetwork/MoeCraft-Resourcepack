@@ -11,7 +11,7 @@ install:
 script:
   - set -ev
   - export TZ='Asia/Shanghai'
-  - zip -q -r MoeCraft-Resourcepack.zip * -d .travis.yml -d .git
+  - zip -r MoeCraft-Resourcepack.zip * -d .git
 
 after_success:
   - ftp cdn.kotori.net
