@@ -13,7 +13,7 @@ script:
   - zip -r MoeCraft-Resourcepack.zip ./*
 
 after_success:
-  - curl -T MoeCraft-Resourcepack.zip -u $CDN_USER:$CDN_PASSWD ftp://cdn.kotori.net/MoeCraft/.minecraft/resourcepacks/
+# - curl -T MoeCraft-Resourcepack.zip -u $CDN_USER:$CDN_PASSWD ftp://cdn.kotori.net/MoeCraft/.minecraft/resourcepacks/
 
   - git clone -b master https://$GITLAB_USER:$GITLAB_PASSWD@gitlab.com/Kenvix/moxbin.git .client
   - cd .client
