@@ -3,6 +3,10 @@ branches:
   only:
   - master
 
+install:
+  - git config --global user.name "Travis-CI"
+  - git config --global user.email "czhdwbcg@gmail.com"
+
 script:
   - set -ev
   - export TZ='Asia/Shanghai'
@@ -10,3 +14,12 @@ script:
 
 after_success:
   - curl -T MoeCraft-Resourcepack.zip -u $CDN_USER:$CDN_PASSWD ftp://cdn.kotori.net/MoeCraft/.minecraft/resourcepacks/
+
+  - git clone -b master https://$GITLAB_USER:$GITLAB_PASSWD@gitlab.com/Kenvix/moxbin.git .client
+  - cd .client
+  - git checkout master
+  - cp ../MoeCraft-Resourcepack.zip ./.minecraft/resourcepacks/
+  - git add ./.minecraft/resourcepacks/MoeCraft-Resourcepack.zip
+  - git commit -m "Travis-CI Updated Resourcepack"
+
+  - git push origin master
