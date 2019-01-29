@@ -18,8 +18,8 @@ after_success:
   - git clone -b master https://$GITLAB_USER:$GITLAB_PASSWD@gitlab.com/Kenvix/moxbin.git .client
   - cd .client
   - git checkout master
-  - cp ../MoeCraft-Resourcepack.zip ./.minecraft/resourcepacks/
+  - cp -f ../MoeCraft-Resourcepack.zip ./.minecraft/resourcepacks/
   - git add ./.minecraft/resourcepacks/MoeCraft-Resourcepack.zip
   - git commit -m "Travis-CI Updated Resourcepack"
 
-  - git push origin master
+  - git push origin master --force
