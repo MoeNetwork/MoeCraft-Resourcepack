@@ -20,6 +20,6 @@ after_success:
   - git checkout master
   - cp -f ../MoeCraft-Resourcepack.zip ./.minecraft/resourcepacks/
   - git add ./.minecraft/resourcepacks/MoeCraft-Resourcepack.zip
-  - git commit -m "Travis-CI Updated Resourcepack"
+  - git commit -m "Travis-CI Updated Resourcepack `date +"%Y-%m-%d %H:%M:%S"`"
 
   - git push origin master --force
