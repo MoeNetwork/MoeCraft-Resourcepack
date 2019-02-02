@@ -22,6 +22,9 @@ steps:
 - script: zip -T -r -9 MoeCraft-Resourcepack.zip ./*
   displayName: Compress MineCraft Resourcepack  # friendly name displayed in the UI
   name: compress  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+- script: git tag -l '$(Build.SourceVersion)'
+  displayName: Make git tag  # friendly name displayed in the UI
+  name: taggit  # identifier for this step (A-Z, a-z, 0-9, and underscore)
 - task: GitHubRelease@0
   inputs:
     gitHubConnection: kenvix
