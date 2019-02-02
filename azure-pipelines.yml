@@ -29,7 +29,7 @@ steps:
     action: 'create' # Options: create, edit, delete
     target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
     tagSource: 'auto' # Required when action == Create# Options: auto, manual
-    #tag: # Required when action == Edit || Action == Delete || TagSource == Manual
+    tag: $(Build.SourceVersion) # Required when action == Edit || Action == Delete || TagSource == Manual
     title: MoeCraft ResourcePack Auto Build # Optional
     #releaseNotesSource: 'file' # Optional. Options: file, input
     #releaseNotesFile: # Optional
