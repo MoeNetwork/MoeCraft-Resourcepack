@@ -28,7 +28,7 @@ steps:
 - script: git clone --depth=1 https://$(cdn_git_user):$(cdn_git_token)@dev.azure.com/MoeCraft/$(resbuild_git_repo)/_git/$(resbuild_git_repo) ./MoeCraftCDN
   displayName: Checkout MoeCraft CDN Repo  # friendly name displayed in the UI
   name: checkoutgit  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-- script: cp -f ./MoeCraft-Resourcepack.zip ./MoeCraftCDN/MoeCraft/.minecraft/resourcepacks/MoeCraft-Resourcepack.zip
+- script: cp -f ./MoeCraft-Resourcepack.zip ./MoeCraftCDN/MoeCraft-Resourcepack.zip
   displayName: Copy Resourcepack ZIP  # friendly name displayed in the UI
   name: preparefile  # identifier for this step (A-Z, a-z, 0-9, and underscore)
 - script: |
