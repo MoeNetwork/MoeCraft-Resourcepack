@@ -31,6 +31,12 @@ steps:
 - script: cp -f ./MoeCraft-Resourcepack.zip ./MoeCraftCDN/MoeCraft/.minecraft/resourcepacks/MoeCraft-Resourcepack.zip
   displayName: Copy Resourcepack ZIP  # friendly name displayed in the UI
   name: preparefile  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+- script: |
+    cd MoeCraftCDN
+    git config user.email "ci@moecraft.net"
+    git config user.name "MoeCraft Auto CI"
+  displayName: Configure git  # friendly name displayed in the UI
+  name: configgit  # identifier for this step (A-Z, a-z, 0-9, and underscore)
 - script: git commit -m AutoCommit-ResourcePack-CI -v -a
   displayName: Git Commit  # friendly name displayed in the UI
   name: commit  # identifier for this step (A-Z, a-z, 0-9, and underscore)
