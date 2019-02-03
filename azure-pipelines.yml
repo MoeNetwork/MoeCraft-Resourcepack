@@ -38,9 +38,10 @@ steps:
     git config --global user.name "MoeCraft Auto CI"
   displayName: Configure git  # friendly name displayed in the UI
   name: configgit  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-- script: git commit -m AutoCommit-ResourcePack-CI -v -a
-  displayName: Git Commit  # friendly name displayed in the UI
+- script: |
+    cd MoeCraftCDN
+    git add .
+    git commit -m AutoCommit-ResourcePack-CI -v -a
+    git push --force -v "origin" master
+  displayName: Git Commit and Push  # friendly name displayed in the UI
   name: commit  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-- script: git push --force -v "origin" master
-  displayName: Git Push  # friendly name displayed in the UI
-  name: push  # identifier for this step (A-Z, a-z, 0-9, and underscore)
