@@ -1,18 +1,16 @@
 {
 	"azis.hop": {
-		"category": "master", 
-		"replace": true, 
-		"sounds":[
-			{
-				"name": "azis/hop", 
-				"stream": true
-			}
-		]
+		"category": "master",
+		"replace": true,
+		"sounds": [{
+			"name": "azis/hop",
+			"stream": true
+		}]
 	},
-	
+
 	"entity.ender_dragon.ambient": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"noisyshit/ahhshort1",
 			"noisyshit/ahhshort2",
 			"noisyshit/ahhshort3",
@@ -22,16 +20,14 @@
 	},
 	"entity.ender_dragon.death": {
 		"replace": true,
-		"sounds":[
-			{
-				"name": "noisyshit/ahhlong", 
-				"stream": true
-			}
-		]
+		"sounds": [{
+			"name": "noisyshit/ahhlong",
+			"stream": true
+		}]
 	},
 	"entity.ender_dragon.hurt": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"noisyshit/hin1",
 			"noisyshit/hin2",
 			"noisyshit/hin3"
@@ -39,7 +35,7 @@
 	},
 	"entity.ender_dragon.growl": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"noisyshit/ahhshort1",
 			"noisyshit/ahhshort2",
 			"noisyshit/ahhshort3",
@@ -47,19 +43,19 @@
 			"noisyshit/ahhshort5"
 		]
 	},
-	
-	
+
+
 	"entity.zombie.ambient": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"noisyshit/say1",
 			"noisyshit/say2",
 			"noisyshit/say3"
 		]
-	}, 
+	},
 	"entity.zombie.hurt": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"noisyshit/hin1",
 			"noisyshit/hin2",
 			"noisyshit/hin3"
@@ -67,23 +63,23 @@
 	},
 	"entity.zombie.death": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"noisyshit/ahhshort2",
 			"noisyshit/ahhshort3",
 			"noisyshit/ahhshort4",
 			"noisyshit/ahhshort5"
 		]
-	}
-	
+	},
+
 	"entity.minecart.inside": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"newbierailway/train"
 		]
-	}
+	},
 	"entity.minecart.riding": {
 		"replace": true,
-		"sounds":[
+		"sounds": [
 			"newbierailway/train"
 		]
 	}
