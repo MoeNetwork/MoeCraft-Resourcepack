@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+# Gradle
+# Build your Java project and run tests with Gradle using a Gradle wrapper script.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+variables:
+  - group: cdn_git
+
+trigger:
+  - master
+
+pr:
+  - master
+
+steps:
+- checkout: self  # self represents the repo where the initial Pipelines YAML file was found
+  clean: true  # whether to fetch clean each time
+  fetchDepth: 1  # the depth of commits to ask Git to fetch
+  lfs: true  # whether to download Git-LFS files
+  submodules: recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
+- script: zip -T -r -9 MoeCraft-Resourcepack.zip ./*
+  displayName: Compress MoeCraft Resourcepack  # friendly name displayed in the UI
+  name: compress  # identifier for this step (A-Z, a-z, 0-9, and underscore)
