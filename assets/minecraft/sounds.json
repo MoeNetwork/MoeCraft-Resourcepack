@@ -9,6 +9,17 @@
 			}
 		]
 	},
+  
+  "sakura.ocnzg-lqyk7": {
+    "category": "master", 
+    "replace": true, 
+    "sounds":[
+      {
+        "name": "sakura.ocnzg-lqyk7", 
+        "stream": true
+      }
+    ]
+  },
 	
 	"entity.ender_dragon.ambient": {
 		"replace": true,
