@@ -1,0 +1,64 @@
+{
+	"entity.ender_dragon.ambient": {
+		"replace": true,
+		"sounds": [
+			"noisyshit/ahhshort1",
+			"noisyshit/ahhshort2",
+			"noisyshit/ahhshort3",
+			"noisyshit/ahhshort4",
+			"noisyshit/ahhshort5"
+		]
+	},
+	"entity.ender_dragon.death": {
+		"replace": true,
+		"sounds": [{
+			"name": "noisyshit/ahhlong",
+			"stream": true
+		}]
+	},
+	"entity.ender_dragon.hurt": {
+		"replace": true,
+		"sounds": [
+			"noisyshit/hin1",
+			"noisyshit/hin2",
+			"noisyshit/hin3"
+		]
+	},
+	"entity.ender_dragon.growl": {
+		"replace": true,
+		"sounds": [
+			"noisyshit/ahhshort1",
+			"noisyshit/ahhshort2",
+			"noisyshit/ahhshort3",
+			"noisyshit/ahhshort4",
+			"noisyshit/ahhshort5"
+		]
+	},
+
+
+	"entity.zombie.ambient": {
+		"replace": true,
+		"sounds": [
+			"noisyshit/say1",
+			"noisyshit/say2",
+			"noisyshit/say3"
+		]
+	},
+	"entity.zombie.hurt": {
+		"replace": true,
+		"sounds": [
+			"noisyshit/hin1",
+			"noisyshit/hin2",
+			"noisyshit/hin3"
+		]
+	},
+	"entity.zombie.death": {
+		"replace": true,
+		"sounds": [
+			"noisyshit/ahhshort2",
+			"noisyshit/ahhshort3",
+			"noisyshit/ahhshort4",
+			"noisyshit/ahhshort5"
+		]
+	}
+}
