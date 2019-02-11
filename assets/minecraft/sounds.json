@@ -1,7 +1,6 @@
 {
 	"azis.hop": {
 		"category": "master",
-		"replace": true,
 		"sounds": [{
 			"name": "azis/hop",
 			"stream": true
@@ -10,23 +9,43 @@
 	
 	"sakura.ocnzg-lqyk7": {
 		"category": "master", 
-		"replace": true, 
 		"sounds":[{
-				"name": "sakura/ocnzg-lqyk7", 
-				"stream": true
+			"name": "sakura/ocnzg-lqyk7", 
+			"stream": true
 		}]
 	},
 
 	"entity.minecart.inside": {
 		"replace": true,
-		"sounds": [
-			"newbierailway/train"
-		]
+		"sounds": [{
+			"name": "newbierailway/train",
+			"stream": true
+		}]
 	},
 	"entity.minecart.riding": {
 		"replace": true,
-		"sounds": [
-			"newbierailway/train"
-		]
+		"sounds": [{
+			"name": "newbierailway/train",
+			"stream": true
+		}]
+	},
+	"railway.newbie.vvvf.accelerate": {
+		"sounds": [{
+			"name": "newbierailway/vvvfaccel",
+			"stream": true
+		}]
+	},
+	"railway.newbie.vvvf.decelerate": {
+		"sounds": [{
+			"name": "newbierailway/vvvfdecel",
+			"stream": true
+		}]
+	},
+	
+	"railway.newbie.announcement.newland.snowdin.arrive": {
+		"sounds": [{
+			"name": "newbierailway/announcement/nl_snowdin_arr",
+			"stream": true
+		}]
 	}
 }
