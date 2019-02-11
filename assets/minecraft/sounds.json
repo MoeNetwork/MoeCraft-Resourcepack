@@ -1,2 +1,32 @@
-{"azis.hop": {"category": "master", "replace": true, "sounds":[{"name": "azis/hop", "stream": true}]}},
-{"sakura.ocnzg-lqyk7": {"category": "master", "replace": true, "sounds":[{"name": "sakura.ocnzg-lqyk7", "stream": true}]}},
+{
+	"azis.hop": {
+		"category": "master",
+		"replace": true,
+		"sounds": [{
+			"name": "azis/hop",
+			"stream": true
+		}]
+	},
+	
+	"sakura.ocnzg-lqyk7": {
+		"category": "master", 
+		"replace": true, 
+		"sounds":[{
+				"name": "sakura/ocnzg-lqyk7", 
+				"stream": true
+		}]
+	},
+
+	"entity.minecart.inside": {
+		"replace": true,
+		"sounds": [
+			"newbierailway/train"
+		]
+	},
+	"entity.minecart.riding": {
+		"replace": true,
+		"sounds": [
+			"newbierailway/train"
+		]
+	}
+}
