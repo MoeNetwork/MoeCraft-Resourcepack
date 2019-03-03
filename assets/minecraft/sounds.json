@@ -3,17 +3,17 @@
 	
 	"sakura.ocnzg-lqyk7": {"sounds":[{"name": "sakura/ocnzg-lqyk7", "stream": true}]},
 	
-	"egmusic.vocal.exct.dejavu": {"sounds": [{"name": "newbierailway/music/dejavu","stream": true}]},
-	"egmusic.vocal.exct.devilman": {"sounds": [{"name": "newbierailway/music/devilman","stream": true}]},
-	"egmusic.vocal.exct.eastqueenroad": {"sounds": [{"name": "newbierailway/music/eastqueenroad","stream": true}]},
-	"egmusic.vocal.exct.killingmylove": {"sounds": [{"name": "newbierailway/music/killingmylove","stream": true}]},
-	"egmusic.instm.calm.leavingstanley": {"sounds": [{"name": "newbierailway/music/leavingstanley","stream": true}]},
-	"egmusic.instm.calm.peoplesdream": {"sounds": [{"name": "newbierailway/music/peoplesdream","stream": true}]},
+	"egmusic.dejavu": {"sounds": [{"name": "newbierailway/music/dejavu","stream": true}]},
+	"egmusic.navilmare": {"sounds": [{"name": "newbierailway/music/navilmare","stream": true}]},
+	"egmusic.newtreasureisland": {"sounds": [{"name": "newbierailway/music/newtreasureisland","stream": true}]},
+	"egmusic.rudebuster": {"sounds": [{"name": "newbierailway/music/rudebuster","stream": true}]},
+	"egmusic.scarletforest": {"sounds": [{"name": "newbierailway/music/scarletforest","stream": true}]},
+	"egmusic.sixthsta": {"sounds": [{"name": "newbierailway/music/sixthsta","stream": true}]},
 
 	"entity.minecart.inside": {"replace": true,"sounds": [{"name": "newbierailway/train","stream": false}]},
 	"entity.minecart.riding": {"replace": true,"sounds": [{"name": "newbierailway/train","stream": false}]},
-	"railway.newbie.vvvf.accel": {"sounds": [{"name": "newbierailway/vvvfaccel","stream": true}]},
-	"railway.newbie.vvvf.decel": {"sounds": [{"name": "newbierailway/vvvfdecel","stream": true}]},
+	"nrt.vvvf.accel": {"sounds": [{"name": "newbierailway/vvvfaccel","stream": true}]},
+	"nrt.vvvf.decel": {"sounds": [{"name": "newbierailway/vvvfdecel","stream": true}]},
 	
-	"railway.newbie.anno.nl.snowdin.arr": {"sounds": [{"name": "newbierailway/announcement/nl_snowdin_arr","stream": true}]}
+	"nrt.anno.nl.snowdin.arr": {"sounds": [{"name": "newbierailway/announcement/nl_snowdin_arr","stream": true}]}
 }
